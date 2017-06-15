@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniCrud", "WindowsFormsApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagementDataGridView", "ManagementDataGridView\ManagementDataGridView.csproj", "{44DCA217-2B0C-485A-A7DB-11B5DA7960E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TallerNavegacion_2", "TallerNavegacion_2\TallerNavegacion_2.csproj", "{A8B2078E-5FA0-4D0F-86C1-A7044D49E3BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{44DCA217-2B0C-485A-A7DB-11B5DA7960E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44DCA217-2B0C-485A-A7DB-11B5DA7960E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44DCA217-2B0C-485A-A7DB-11B5DA7960E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8B2078E-5FA0-4D0F-86C1-A7044D49E3BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B2078E-5FA0-4D0F-86C1-A7044D49E3BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B2078E-5FA0-4D0F-86C1-A7044D49E3BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B2078E-5FA0-4D0F-86C1-A7044D49E3BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
