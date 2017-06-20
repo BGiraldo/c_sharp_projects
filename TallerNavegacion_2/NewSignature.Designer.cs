@@ -33,18 +33,18 @@
             this.txtCode = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.txtPartial3 = new System.Windows.Forms.TextBox();
+            this.txtPartial2 = new System.Windows.Forms.TextBox();
+            this.txtPartial1 = new System.Windows.Forms.TextBox();
+            this.txtStudio3 = new System.Windows.Forms.TextBox();
+            this.txtStudio2 = new System.Windows.Forms.TextBox();
+            this.txtStudio1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtStudio1 = new System.Windows.Forms.TextBox();
-            this.txtStudio2 = new System.Windows.Forms.TextBox();
-            this.txtStudio3 = new System.Windows.Forms.TextBox();
-            this.txtPartial1 = new System.Windows.Forms.TextBox();
-            this.txtPartial2 = new System.Windows.Forms.TextBox();
-            this.txtPartial3 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.lbDefinitive = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -82,6 +82,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(201, 20);
             this.txtName.TabIndex = 3;
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtName_KeyPress);
             // 
             // groupBox1
             // 
@@ -104,32 +105,59 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Grades";
             // 
-            // label3
+            // txtPartial3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 33);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Studio 1";
+            this.txtPartial3.Location = new System.Drawing.Point(229, 102);
+            this.txtPartial3.Name = "txtPartial3";
+            this.txtPartial3.Size = new System.Drawing.Size(82, 20);
+            this.txtPartial3.TabIndex = 11;
+            this.txtPartial3.Text = "0,0";
+            this.txtPartial3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtPartial3_KeyUp);
             // 
-            // label4
+            // txtPartial2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 72);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Studio 2";
+            this.txtPartial2.Location = new System.Drawing.Point(229, 68);
+            this.txtPartial2.Name = "txtPartial2";
+            this.txtPartial2.Size = new System.Drawing.Size(82, 20);
+            this.txtPartial2.TabIndex = 10;
+            this.txtPartial2.Text = "0,0";
+            this.txtPartial2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtPartial2_KeyUp);
             // 
-            // label5
+            // txtPartial1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 109);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 13);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Studio 3";
+            this.txtPartial1.Location = new System.Drawing.Point(229, 34);
+            this.txtPartial1.Name = "txtPartial1";
+            this.txtPartial1.Size = new System.Drawing.Size(82, 20);
+            this.txtPartial1.TabIndex = 9;
+            this.txtPartial1.Text = "0,0";
+            this.txtPartial1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtPartial1_KeyUp);
+            // 
+            // txtStudio3
+            // 
+            this.txtStudio3.Location = new System.Drawing.Point(68, 102);
+            this.txtStudio3.Name = "txtStudio3";
+            this.txtStudio3.Size = new System.Drawing.Size(82, 20);
+            this.txtStudio3.TabIndex = 8;
+            this.txtStudio3.Text = "0,0";
+            this.txtStudio3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtStudio3_KeyUp);
+            // 
+            // txtStudio2
+            // 
+            this.txtStudio2.Location = new System.Drawing.Point(68, 72);
+            this.txtStudio2.Name = "txtStudio2";
+            this.txtStudio2.Size = new System.Drawing.Size(82, 20);
+            this.txtStudio2.TabIndex = 7;
+            this.txtStudio2.Text = "0,0";
+            this.txtStudio2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtStudio2_KeyUp);
+            // 
+            // txtStudio1
+            // 
+            this.txtStudio1.Location = new System.Drawing.Point(68, 33);
+            this.txtStudio1.Name = "txtStudio1";
+            this.txtStudio1.Size = new System.Drawing.Size(82, 20);
+            this.txtStudio1.TabIndex = 6;
+            this.txtStudio1.Text = "0,0";
+            this.txtStudio1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtStudio1_KeyUp);
             // 
             // label6
             // 
@@ -158,47 +186,32 @@
             this.label8.TabIndex = 3;
             this.label8.Text = "Partial 1";
             // 
-            // txtStudio1
+            // label5
             // 
-            this.txtStudio1.Location = new System.Drawing.Point(68, 33);
-            this.txtStudio1.Name = "txtStudio1";
-            this.txtStudio1.Size = new System.Drawing.Size(82, 20);
-            this.txtStudio1.TabIndex = 6;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 105);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "workshop 3";
             // 
-            // txtStudio2
+            // label4
             // 
-            this.txtStudio2.Location = new System.Drawing.Point(68, 72);
-            this.txtStudio2.Name = "txtStudio2";
-            this.txtStudio2.Size = new System.Drawing.Size(82, 20);
-            this.txtStudio2.TabIndex = 7;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 72);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "workshop 2";
             // 
-            // txtStudio3
+            // label3
             // 
-            this.txtStudio3.Location = new System.Drawing.Point(68, 102);
-            this.txtStudio3.Name = "txtStudio3";
-            this.txtStudio3.Size = new System.Drawing.Size(82, 20);
-            this.txtStudio3.TabIndex = 8;
-            // 
-            // txtPartial1
-            // 
-            this.txtPartial1.Location = new System.Drawing.Point(229, 34);
-            this.txtPartial1.Name = "txtPartial1";
-            this.txtPartial1.Size = new System.Drawing.Size(82, 20);
-            this.txtPartial1.TabIndex = 9;
-            // 
-            // txtPartial2
-            // 
-            this.txtPartial2.Location = new System.Drawing.Point(229, 68);
-            this.txtPartial2.Name = "txtPartial2";
-            this.txtPartial2.Size = new System.Drawing.Size(82, 20);
-            this.txtPartial2.TabIndex = 10;
-            // 
-            // txtPartial3
-            // 
-            this.txtPartial3.Location = new System.Drawing.Point(229, 102);
-            this.txtPartial3.Name = "txtPartial3";
-            this.txtPartial3.Size = new System.Drawing.Size(82, 20);
-            this.txtPartial3.TabIndex = 11;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 36);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "workshop 1";
             // 
             // lbDefinitive
             // 
@@ -217,6 +230,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Register";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -226,6 +240,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "Return";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // NewSignature
             // 
